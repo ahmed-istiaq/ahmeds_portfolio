@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ahmed-istiaq.github.io/ahmeds_portfolio/sitemap.xml
