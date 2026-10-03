@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahmed Istiaq | MBBS Student, Developer &amp; MediNote (Area 139)</title>
+<meta name="description" content="Ahmed Istiaq — MBBS student at Rangpur Medical College, full-stack developer and creator of MediNote (Area 139): handwritten anatomy, physiology &amp; biochemistry notes.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0b0a09">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://ahmed-istiaq.github.io/">
+<link rel="icon" href="/favicon.ico" sizes="48x48 96x96">
+<link rel="icon" type="image/png" href="/favicon-96.png" sizes="96x96">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ahmed Istiaq">
+<meta property="og:url" content="https://ahmed-istiaq.github.io/">
+<meta property="og:title" content="Ahmed Istiaq | MBBS Student, Developer &amp; MediNote (Area 139)">
+<meta property="og:description" content="MBBS student at Rangpur Medical College, full-stack developer and creator of MediNote (Area 139).">
+<meta property="og:image" content="https://ahmed-istiaq.github.io/ahmeds_portfolio/Assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Ahmed Istiaq","alternateName":["Ahmed-Istiaq","Area 139","MediNote"],"url":"https://ahmed-istiaq.github.io/","inLanguage":"en"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0a09;--tx:#f1ebe3;--mu:#a39a90;--or:#f0592a;--or2:#ff8a4c;--ln:rgba(255,255,255,.09);--gl:rgba(255,255,255,.06);
+ --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{background:var(--bg);color:var(--tx);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px;border-radius:999px}
+::selection{background:var(--or);color:#0b0a09}
+
+/* ---------- animated wave background ---------- */
+#wave{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block;background:
+ radial-gradient(60% 55% at 22% 70%,#3a1408 0,transparent 70%),radial-gradient(40% 40% at 80% 10%,#2a0f06 0,transparent 70%),var(--bg)}
+.veil{position:fixed;inset:0;z-index:1;pointer-events:none;background:
+ radial-gradient(70% 45% at 50% 38%,rgba(11,10,9,.62),transparent 75%),
+ linear-gradient(to bottom,rgba(11,10,9,.55),transparent 22%,transparent 70%,var(--bg) 100%)}
+.lines{position:fixed;inset:0;z-index:1;pointer-events:none;display:flex;justify-content:space-between;padding:0 6vw;opacity:.9}
+.lines i{width:1px;height:100%;background:linear-gradient(to bottom,transparent,rgba(240,89,42,.16) 35%,rgba(255,255,255,.05) 70%,transparent)}
+.side{position:fixed;right:max(14px,2vw);top:50%;z-index:3;translate:0 -50%;writing-mode:vertical-rl;font:500 10px/1 var(--mono);letter-spacing:.28em;text-transform:uppercase;color:rgba(241,235,227,.38)}
+
+/* ---------- header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:20;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding:18px max(20px,4vw);padding-top:max(18px,env(safe-area-inset-top))}
+.logo{display:inline-flex;align-items:center;gap:10px;font:700 15px/1 var(--sans);letter-spacing:-.01em;justify-self:start}
+.logo img{width:30px;height:30px;border-radius:9px;display:block;border:1px solid var(--ln)}
+.logo b{color:var(--or);font-weight:700}
+nav.pill{display:flex;gap:4px;padding:5px;border-radius:999px;background:rgba(18,15,13,.62);border:1px solid var(--ln);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%)}
+nav.pill a{padding:9px 18px;border-radius:999px;font-size:13px;font-weight:500;color:var(--mu);transition:color .25s,background .25s}
+nav.pill a:hover{color:var(--tx);background:var(--gl)}
+nav.pill a.on{color:var(--tx);background:rgba(240,89,42,.18)}
+.hcta{justify-self:end;display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1px solid var(--ln);background:rgba(18,15,13,.62);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font-size:13px;font-weight:600;transition:border-color .25s,background .25s}
+.hcta:hover{border-color:var(--or);background:rgba(240,89,42,.14)}
+.hcta .d{width:7px;height:7px;border-radius:50%;background:var(--or);box-shadow:0 0 0 0 rgba(240,89,42,.7);animation:pulse 2.2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(240,89,42,0)}100%{box-shadow:0 0 0 0 rgba(240,89,42,0)}}
+
+/* ---------- hero ---------- */
+main{position:relative;z-index:5}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px max(20px,5vw) 90px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 16px;border-radius:999px;border:1px solid var(--ln);background:rgba(18,15,13,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font:500 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--or2)}
+.eyebrow s{width:3px;height:3px;border-radius:50%;background:var(--mu);text-decoration:none}
+h1{margin:26px 0 22px;font-weight:800;font-size:clamp(3.1rem,11.5vw,9.6rem);line-height:.92;letter-spacing:-.045em;background:linear-gradient(180deg,#fff7ee 0%,#f6d9c2 38%,#ff8a4c 78%,#f0592a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 40px rgba(240,89,42,.25))}
+h1 span{display:block}
+.sub{max-width:620px;font-size:clamp(15px,1.55vw,18px);color:#cfc6bb}
+.sub strong{color:var(--tx);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-size:14px;font-weight:700;letter-spacing:.01em;transition:transform .35s var(--ease),background .25s,border-color .25s,color .25s,box-shadow .35s}
+.btn.p{background:var(--or);color:#0b0a09;box-shadow:0 10px 40px -10px rgba(240,89,42,.7)}
+.btn.p:hover{background:var(--tx);transform:translateY(-3px);box-shadow:0 16px 50px -10px rgba(255,138,76,.7)}
+.btn.g{border:1px solid rgba(255,255,255,.22);background:rgba(18,15,13,.45);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.btn.g:hover{border-color:var(--or);color:var(--or2);transform:translateY(-3px)}
+.btn svg{width:15px;height:15px;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translate(3px,-3px)}
+.scroll{position:absolute;left:50%;bottom:26px;translate:-50% 0;display:flex;flex-direction:column;align-items:center;gap:10px;font:500 10px/1 var(--mono);letter-spacing:.3em;text-transform:uppercase;color:rgba(241,235,227,.45)}
+.scroll i{width:1px;height:38px;background:linear-gradient(var(--or),transparent);animation:drip 2.2s var(--ease) infinite;transform-origin:top}
+@keyframes drip{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+/* ---------- explore cards ---------- */
+.explore{max-width:1180px;margin:0 auto;padding:40px max(20px,4vw) 110px}
+.explore h2{font:500 11px/1 var(--mono);letter-spacing:.26em;text-transform:uppercase;color:var(--or2);margin-bottom:22px;display:flex;align-items:center;gap:14px}
+.explore h2::after{content:"";flex:1;height:1px;background:var(--ln)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{position:relative;display:flex;flex-direction:column;gap:14px;min-height:230px;padding:26px;border-radius:24px;overflow:hidden;background:linear-gradient(160deg,rgba(28,22,18,.78),rgba(14,12,10,.78));border:1px solid var(--ln);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform .5s var(--ease),border-color .3s}
+.card::before{content:"";position:absolute;inset:auto -30% -60% -30%;height:80%;background:radial-gradient(closest-side,rgba(240,89,42,.34),transparent);opacity:0;transition:opacity .5s;pointer-events:none}
+.card:hover{transform:translateY(-6px);border-color:rgba(240,89,42,.55)}
+.card:hover::before{opacity:1}
+.card .n{font:500 11px/1 var(--mono);letter-spacing:.2em;color:var(--mu)}
+.card h3{font-size:clamp(22px,2.2vw,28px);line-height:1.1;letter-spacing:-.02em;font-weight:700}
+.card p{color:var(--mu);font-size:14px;max-width:34ch}
+.card .go{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--or2)}
+.card .go svg{width:15px;height:15px;transition:transform .35s var(--ease)}
+.card:hover .go svg{transform:translate(4px,-4px)}
+footer{position:relative;z-index:5;max-width:1180px;margin:0 auto;padding:0 max(20px,4vw) max(34px,env(safe-area-inset-bottom));display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font:400 11px/1.6 var(--mono);color:rgba(241,235,227,.45);border-top:1px solid var(--ln);padding-top:22px}
+
+/* ---------- entrance + scroll reveal ---------- */
+.up{opacity:0;transform:translateY(26px);animation:up .95s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes up{to{opacity:1;transform:none}}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media(max-width:900px){
+ header{grid-template-columns:auto 1fr auto}
+ nav.pill{justify-self:center}
+ nav.pill a{padding:8px 12px;font-size:12px}
+ nav.pill a.hm{display:none}
+ .cards{grid-template-columns:1fr}
+ .card{min-height:0}
+ .side,.lines i:nth-child(2),.lines i:nth-child(4){display:none}
+}
+@media(max-width:560px){
+ header{grid-template-columns:1fr auto;padding-bottom:0}
+ nav.pill{grid-column:1/-1;grid-row:2;justify-self:stretch;justify-content:space-between}
+ nav.pill a{flex:1;text-align:center;padding:8px 6px}
+ .hero{padding-top:150px}
+ .hcta .t{display:none}
+ .hcta{padding:11px}
+ .btn{width:100%;justify-content:center}
+ .cta{width:100%;max-width:340px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .up,.rv{animation:none;opacity:1;transform:none;transition:none}
+ .scroll i,.hcta .d{animation:none}
+}
+</style>
+</head>
+<body>
+<canvas id="wave" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
+<div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+<div class="side" aria-hidden="true">Rangpur, Bangladesh &nbsp;/&nbsp; 2026</div>
+
+<header>
+  <a class="logo" href="/" aria-label="Ahmed Istiaq — home"><img src="/favicon-96.png" alt="" width="30" height="30">Ahmed<b>.</b>Istiaq</a>
+  <nav class="pill" aria-label="Main">
+    <a class="on hm" href="/">Home</a>
+    <a href="/ahmeds_portfolio/">Portfolio</a>
+    <a href="/area139/">Area 139</a>
+    <a href="#explore">Explore</a>
+  </nav>
+  <a class="hcta" href="https://t.me/ahmedistiaq" rel="noopener"><span class="d"></span><span class="t">Say hello</span><span aria-hidden="true">↗</span></a>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="top">
+    <div class="eyebrow up" style="--d:.1s">MBBS<s></s>Developer<s></s>MediNote</div>
+    <h1 id="top" class="up" style="--d:.25s"><span>Ahmed</span><span>Istiaq</span></h1>
+    <p class="sub up" style="--d:.45s">Clinical medicine meets computational systems. <strong>2nd-year MBBS student at Rangpur Medical College</strong>, full-stack developer, and creator of <strong>MediNote (Area 139)</strong> — handwritten anatomy, physiology &amp; biochemistry notes.</p>
+    <div class="cta up" style="--d:.6s">
+      <a class="btn p" href="/ahmeds_portfolio/">View portfolio <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a>
+      <a class="btn g" href="/area139/">Open MediNote library <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a>
+    </div>
+    <a class="scroll up" style="--d:1s" href="#explore" aria-label="Scroll to explore"><span>Scroll</span><i></i></a>
+  </section>
+
+  <section class="explore" id="explore" aria-labelledby="ex-h">
+    <h2 id="ex-h" class="rv">Explore</h2>
+    <div class="cards">
+      <a class="card rv" href="/ahmeds_portfolio/" style="--d:.05s">
+        <span class="n">01</span>
+        <h3>Portfolio</h3>
+        <p>About me, my work, and the people and places behind it.</p>
+        <span class="go">Visit portfolio <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></span>
+      </a>
+      <a class="card rv" href="/area139/" style="--d:.15s">
+        <span class="n">02</span>
+        <h3>Area 139 — MediNote Library</h3>
+        <p>Area 139 is a 3D library of handwritten MBBS notes and books, shelf by shelf.</p>
+        <span class="go">Enter the library <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></span>
+      </a>
+      <a class="card rv" href="https://t.me/medinote_139" rel="noopener" style="--d:.25s">
+        <span class="n">03</span>
+        <h3>Telegram Channel</h3>
+        <p>Follow MediNote on Telegram for new notes and updates.</p>
+        <span class="go">Join the channel <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© 2025–2026 Ahmed Istiaq. Rangpur Medical College.</span>
+  <span>Built with care in Bangladesh.</span>
+</footer>
+
+<script>
+/* ===== orange / black flowing ribbon (WebGL) ===== */
+(()=>{
+ const cv=document.getElementById('wave');
+ const gl=cv.getContext('webgl',{antialias:false,alpha:false,powerPreference:'low-power'});
+ if(!gl)return;                                   /* CSS gradient stays as fallback */
+ const vs='attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+ const fs=`#ifdef GL_FRAGMENT_PRECISION_HIGH
+ precision highp float;
+ #else
+ precision mediump float;
+ #endif
+ uniform vec2 R;uniform float T;uniform vec2 M;
+ float curve(float x,float k,float t){return .30*sin(x*1.15+k+t*.22)+.14*sin(x*2.3-k*1.7-t*.31)+.06*sin(x*4.1+k*.6+t*.5);}
+ float width(float x,float k,float t){return .17+.11*sin(x*1.6+k*2.+t*.27)+.05*sin(x*3.3+t*.4+k);}
+ vec3 ribbon(vec2 p,float k,float t,float str){
+  float x=p.x,c=curve(x,k,t),e=.004;
+  float c1=(curve(x+e,k,t)-curve(x-e,k,t))/(2.*e);
+  float w=width(x,k,t);
+  float dy=p.y-c;
+  float s=clamp(dy/w,-1.,1.);
+  float edge=1.-smoothstep(.86,1.,abs(dy/w));            /* soft silhouette */
+  if(edge<=0.)return vec3(0.);
+  float z=sqrt(max(1.-s*s,0.));
+  vec3 n=normalize(vec3(-c1*s*.7+.10*sin(x*9.+t*.9+k*3.),s,z+.001));
+  vec3 V=vec3(0.,0.,1.);
+  vec3 L1=normalize(vec3(-.55,.75,.6)),L2=normalize(vec3(.8,-.35,.45));
+  float d1=max(dot(n,L1),0.),d2=max(dot(n,L2),0.);
+  float sp1=pow(max(dot(reflect(-L1,n),V),0.),26.);
+  float sp2=pow(max(dot(reflect(-L2,n),V),0.),14.);
+  float fr=pow(1.-max(dot(n,V),0.),2.4);
+  /* palette: black -> deep red -> orange -> hot cream (no other hues) */
+  vec3 deep=vec3(.35,.06,.015),mid=vec3(.94,.35,.16),hot=vec3(1.,.72,.42),cream=vec3(1.,.93,.82);
+  vec3 col=deep*(.25+d1*.9)+mid*(d1*d1*.85+d2*.45)+hot*fr*.8+cream*(sp1*1.25+sp2*.55);
+  /* thin dark bands across the surface to mimic glossy folds */
+  col*=.72+.28*sin(s*5.+x*3.+t*.5+k);
+  return col*edge*str;
+ }
+ void main(){
+  vec2 uv=(gl_FragCoord.xy*2.-R)/R.y;                      /* aspect-correct, y in -1..1 */
+  float t=T;
+  vec2 p=uv*1.15;
+  p+=M*vec2(.06,.04);
+  p=mat2(.96,-.28,.28,.96)*p;                              /* slight tilt */
+  p.x-=.1;p.y+=.28;                                        /* bias the ribbon low-left like a hero accent */
+  vec3 col=vec3(0.);
+  col+=ribbon(p+vec2(.0,.0),0.,t,1.0);
+  col+=ribbon(p*vec2(1.,1.)+vec2(.35,-.18),2.4,t*.9,.55);
+  col+=ribbon(p+vec2(-.4,.34),4.7,t*1.1,.38);
+  /* soft ember haze */
+  float h=exp(-length((uv-vec2(-.55,-.35))*vec2(.9,1.2))*1.6);
+  col+=vec3(.55,.14,.04)*h*.32;
+  /* vignette to black + fade toward the right/top so the copy stays readable */
+  float v=1.-smoothstep(.35,1.9,length(uv*vec2(.8,1.)));
+  col*=v;
+  col=col/(1.+col*.55);                                    /* gentle tone-map */
+  col=pow(col,vec3(.92));
+  float g=fract(sin(dot(gl_FragCoord.xy,vec2(12.9898,78.233)))*43758.5453);
+  col+=(g-.5)*.012;                                        /* film grain / anti-banding */
+  gl_FragColor=vec4(max(col,0.)+vec3(.043,.039,.035)*(1.-v*.7),1.);
+ }`;
+ const mk=(t,s)=>{const o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);return gl.getShaderParameter(o,gl.COMPILE_STATUS)?o:null};
+ const v=mk(gl.VERTEX_SHADER,vs),f=mk(gl.FRAGMENT_SHADER,fs);if(!v||!f)return;
+ const pr=gl.createProgram();gl.attachShader(pr,v);gl.attachShader(pr,f);gl.linkProgram(pr);
+ if(!gl.getProgramParameter(pr,gl.LINK_STATUS))return;gl.useProgram(pr);
+ const b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+ const loc=gl.getAttribLocation(pr,'p');gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+ const uR=gl.getUniformLocation(pr,'R'),uT=gl.getUniformLocation(pr,'T'),uM=gl.getUniformLocation(pr,'M');
+ const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const small=innerWidth<700;
+ let scale=Math.min(devicePixelRatio||1,small?1:1.25)*(small?.6:.7);
+ const size=()=>{cv.width=Math.max(2,Math.round(innerWidth*scale));cv.height=Math.max(2,Math.round(innerHeight*scale));gl.viewport(0,0,cv.width,cv.height)};
+ size();addEventListener('resize',()=>{size();if(reduce)draw(4)});
+ let mx=0,my=0,tx=0,ty=0;
+ addEventListener('pointermove',e=>{tx=e.clientX/innerWidth*2-1;ty=-(e.clientY/innerHeight*2-1)},{passive:true});
+ const draw=t=>{gl.uniform2f(uR,cv.width,cv.height);gl.uniform1f(uT,t);gl.uniform2f(uM,mx,my);gl.drawArrays(gl.TRIANGLES,0,3)};
+ if(reduce){draw(4);return}
+ let last=0,t0=performance.now(),run=true;
+ document.addEventListener('visibilitychange',()=>{run=!document.hidden;if(run)requestAnimationFrame(loop)});
+ /* adaptive quality: if frames are slow, lower the resolution once */
+ let slow=0,adapted=false;
+ function loop(now){
+  if(!run)return;
+  const dt=now-last;last=now;
+  if(!adapted&&dt>34){if(++slow>25){scale*=.75;size();adapted=true}}else if(dt<=34)slow=Math.max(0,slow-1);
+  mx+=(tx-mx)*.04;my+=(ty-my)*.04;
+  draw((now-t0)/1000*.85+2);
+  requestAnimationFrame(loop);
+ }
+ requestAnimationFrame(loop);
+})();
+
+/* ===== scroll reveal ===== */
+(()=>{
+ const els=document.querySelectorAll('.rv');
+ if(!('IntersectionObserver' in window)){els.forEach(e=>e.classList.add('in'));return}
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+ els.forEach(e=>io.observe(e));
+})();
+</script>
+</body>
+</html>
